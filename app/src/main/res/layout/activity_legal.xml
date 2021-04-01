@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_margin="12dp"
+                android:onClick="jumpToAdminLogin"
+                android:background="@drawable/admin"
+                />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/legal"
+                android:clickable="true"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:textColor="#000000"
+                android:maxLines="5"
+                android:singleLine="false"
+                android:lines="11"
+                android:ellipsize="marquee"
+                android:layout_marginBottom="8dp"
+                android:textStyle=""
+                android:clickable="true"
+                android:text="Yasal Uyarı: Şirketimiz, Anayasa’nın 20. maddesine ve KVK Kanunu’nun 4. maddesine uygun olarak,
+kişisel verilerin işlenmesi konusunda; hukuka ve dürüstlük kurallarına uygun; doğru ve gerektiğinde
+güncel; belirli, açık ve meşru amaçlar güderek; amaçla bağlantılı, sınırlı ve ölçülü bir biçimde kişisel
+veri işleme faaliyetinde bulunmaktadır. Şirketimiz kanunlarda öngörülen veya kişisel veri işleme
+amacının gerektirdiği süre kadar kişisel verileri muhafaza etmektedir."
+                />
+
+            <Button
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/news_layout_shape"
+                android:onClick="flyToMainActivity"
+                android:layout_weight="1"
+                android:text="Zaten Kayıtlıyım"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/news_layout_shape"
+                    android:onClick="flyToUserRegister"
+                    android:layout_weight="1"
+                    android:text="Kayıt ol"/>
+
+                <Button
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="closeApp"
+                    android:background="@drawable/news_layout_shape"
+                    android:layout_weight="1"
+                    android:text="Kapat"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

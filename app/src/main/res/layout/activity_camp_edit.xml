@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/goods_photo"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:onClick="selectImage"
+                android:scaleType="fitXY"
+                android:background="@drawable/broken_image"
+                android:clickable="true"
+                />
+
+            <EditText
+                android:id="@+id/goods_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:lines="1"
+                android:gravity="top"
+                android:maxLines="25"
+                android:singleLine="false"
+                android:hint="Ürün Başlığı"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/goods_body"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:lines="5"
+                android:gravity="top"
+                android:maxLines="25"
+                android:singleLine="false"
+                android:hint="Ürün Tanımı"
+                android:textColor="#000000"
+                />
+
+            <EditText
+                android:id="@+id/goods_price"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:lines="1"
+                android:gravity="top"
+                android:maxLines="25"
+                android:inputType="number"
+                android:singleLine="false"
+                android:hint="Fiyat [TL]"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:maxLines="5"
+                android:textSize="20dp"
+                android:singleLine="false"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="Ürünle uyumlu olan modelleri seçiniz."
+                />
+
+            <RadioButton
+                android:id="@+id/A_model_rad"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model A"
+                android:checked="false"
+                />
+
+            <RadioButton
+                android:id="@+id/B_model_rad"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model B"
+                android:checked="false"
+                />
+            <RadioButton
+                android:id="@+id/C_model_rad"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model C"
+                android:checked="false"
+                />
+            <RadioButton
+                android:id="@+id/D_model_rad"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model D"
+                android:checked="false"
+                />
+            <RadioButton
+                android:id="@+id/E_model_rad"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model E"
+                android:checked="false"
+                />
+            <RadioButton
+                android:id="@+id/F_model_rad"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model F"
+                android:checked="false"
+                />
+            <RadioButton
+                android:id="@+id/G_model_rad"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model G"
+                android:checked="false"
+                />
+            <RadioButton
+                android:id="@+id/H_model_rad"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model H"
+                android:checked="false"
+                />
+
+            <RadioButton
+                android:id="@+id/I_model_rad"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model I"
+                android:checked="false"
+                />
+
+            <RadioButton
+                android:id="@+id/J_model_rad"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model J"
+                android:checked="false"
+                />
+
+
+
+            <Button
+                android:id="@+id/add_camp_btn"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/news_layout_shape"
+                android:onClick="postTheGoods"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:text="Ürünü Satışa Çıkar"/>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

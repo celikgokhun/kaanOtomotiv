@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MyDealerActivity"
+    android:orientation="vertical"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_marginTop="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/cekmekoy_bayi"
+                android:background="@null"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:onClick="applyTestDriving"
+                android:textStyle="bold"
+                android:textColor="#4778c4"
+                android:text="Test Sürüşü Talebi Oluşturmak İçin Tıklayınız !"
+                android:textAllCaps="false"
+                android:background="@drawable/address_layout_shape"
+                />
+
+            <Button
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:onClick="contactRequest"
+                android:textStyle="bold"
+                android:textColor="#4778c4"
+                android:text="İletişim Talebi Oluşturun"
+                android:textAllCaps="false"
+                android:background="@drawable/address_layout_shape"
+                />
+
+            <Button
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:onClick="applyInsurance"
+                android:textStyle="bold"
+                android:textColor="#4778c4"
+                android:text="Sigorta Talebi Oluşturun"
+                android:textAllCaps="false"
+                android:background="@drawable/address_layout_shape"
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="horizontal"
+                android:background="@drawable/address_layout_shape"
+
+                >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:background="@null"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_dealer_24dp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="15dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/colorPrimary"
+                        android:maxLines="5"
+                        android:textSize="20sp"
+                        android:singleLine="false"
+                        android:lines="2"
+                        android:textStyle="bold"
+                        android:clickable="true"
+                        android:textAlignment="center"
+                        android:text="Kahveci Mah. Karafil Cad. No:64 Erenler 34788 - İSTANBUL"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/colorPrimary"
+                        android:maxLines="5"
+                        android:textSize="16sp"
+                        android:singleLine="false"
+                        android:textStyle="bold"
+                        android:clickable="true"
+                        android:textAlignment="center"
+                        android:text="Telefon: 0216 445 10 33"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/colorPrimary"
+                        android:maxLines="5"
+                        android:textSize="16sp"
+                        android:singleLine="false"
+                        android:textStyle="bold"
+                        android:clickable="true"
+                        android:textAlignment="center"
+                        android:text="Fax: 0216 445 10 33"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/colorPrimary"
+                        android:maxLines="5"
+                        android:textSize="12sp"
+                        android:singleLine="false"
+                        android:textStyle="bold"
+                        android:clickable="true"
+                        android:textAlignment="center"
+                        android:text="E-mail: satis@kaanotomotiv.com.tr"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer"
+        android:scrollbars="none"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewForNews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          />
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:onClick="showMyToyotaFeatures"
+            android:layout_margin="5dp"
+            android:src="@drawable/toyota"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:onClick="goMyDealer"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_dealer_24dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:onClick="setAppointment"
+            android:layout_margin="5dp"
+            android:src="@drawable/appointment"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/request_tow_truck_btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:onClick="requestRoadAssistant"
+            android:layout_margin="5dp"
+            android:src="@drawable/alert_24dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:onClick="goBasketActivity"
+            android:layout_margin="5dp"
+            android:src="@drawable/basket"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

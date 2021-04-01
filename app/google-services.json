@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "648968624911",
+    "firebase_url": "https://kaanotomotiv-f64ef.firebaseio.com",
+    "project_id": "kaanotomotiv-f64ef",
+    "storage_bucket": "kaanotomotiv-f64ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:648968624911:android:494ab4c290a5bdffa0bc7a",
+        "android_client_info": {
+          "package_name": "com.kaan.otomotiv.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "648968624911-9jm58nlc4s82jbvjum3up3umlcambhqo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kaan.otomotiv.myapplication",
+            "certificate_hash": "7bd0727179453d8c77c66f7e63a2b2c408b311d9"
+          }
+        },
+        {
+          "client_id": "648968624911-evfo8cr3asqhh531ddtfn6li8qhhbf8g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrIuKt_-IfVidK8hakRM8Z66Fk7XYtKKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "648968624911-evfo8cr3asqhh531ddtfn6li8qhhbf8g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

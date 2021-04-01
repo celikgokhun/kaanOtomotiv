@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:maxLines="5"
+                    android:textSize="20dp"
+                    android:singleLine="false"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:text="İletişime geçmek istediğiniz birimi seçin biz sizi arayalım! "
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioFinance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Finans"
+                    android:checked="false"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioRent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kiralık Araçlar"
+                    android:checked="false"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioCustomerRelations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Müşteri İlişkileri"
+                    android:checked="false"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioFilo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Filo Satış"
+                    android:checked="false"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioInsurance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kasko-Sigorta"
+                    android:checked="false"
+                    />
+
+                <EditText
+                    android:id="@+id/contact_name_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:textAlignment="center"
+                    android:hint="Ad"
+                    android:textSize="25dp"
+                    android:inputType="text"
+                    android:background="@drawable/news_layout_shape"
+                    />
+
+                <EditText
+                    android:id="@+id/contact_surname_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:textAlignment="center"
+                    android:hint="Soyad"
+                    android:textSize="25dp"
+                    android:inputType="text"
+                    android:background="@drawable/news_layout_shape"
+                    />
+
+                <EditText
+                    android:id="@+id/contact_phone_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:textAlignment="center"
+                    android:hint="Telefon"
+                    android:textSize="25dp"
+                    android:inputType="phone"
+                    android:background="@drawable/news_layout_shape"
+                    />
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:onClick="requestContactFromDealer"
+                    android:textStyle="bold"
+                    android:textColor="#4778c4"
+                    android:background="@null"
+                    android:textAllCaps="false"
+                    android:text="Benimle İletişim Geçin !"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

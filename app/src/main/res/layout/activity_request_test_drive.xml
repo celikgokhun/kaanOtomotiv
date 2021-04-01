@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <DatePicker
+                    android:id="@+id/date_picker1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:calendarViewShown="true"
+                    android:gravity="center"
+                    android:spinnersShown="false" />
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="25dp"
+                    android:onClick="updatePicker"
+                    android:textStyle="bold"
+                    android:textColor="#4778c4"
+                    android:background="@null"
+                    android:text="Saat Seç"/>
+
+
+                <EditText
+                    android:id="@+id/requester_email_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:hint="E-mail"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/news_layout_shape"
+                    />
+
+                <EditText
+                    android:id="@+id/requester_name_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:textAlignment="center"
+                    android:hint="Ad"
+                    android:textSize="25sp"
+                    android:inputType="text"
+                    android:background="@drawable/news_layout_shape"
+                    />
+
+                <EditText
+                    android:id="@+id/requester_surname_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:textAlignment="center"
+                    android:hint="Soyad"
+                    android:textSize="25sp"
+                    android:inputType="text"
+                    android:background="@drawable/news_layout_shape"
+                    />
+
+                <EditText
+                    android:id="@+id/requester_phone_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:textAlignment="center"
+                    android:hint="Telefon"
+                    android:textSize="25dp"
+                    android:inputType="phone"
+                    android:background="@drawable/news_layout_shape"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="25sp"
+                    android:layout_margin="8dp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rdforapp1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/nine_ten_btn1"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textAlignment="center"
+                        android:text="09.00 - 10.00"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:background="#83eb34"
+                        android:visibility="gone"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/ten_eleven_btn1"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textAlignment="center"
+                        android:text="10.00 - 11.00"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:background="#83eb34"
+                        android:visibility="gone"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/eleven_twelve_btn1"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textAlignment="center"
+                        android:text="11.00 - 12.00"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:background="#83eb34"
+                        android:visibility="gone"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/thirteen_fourteen_btn1"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textAlignment="center"
+                        android:text="13.00 - 14.00"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:background="#83eb34"
+                        android:visibility="gone"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/fourteen_fifteen_btn1"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textAlignment="center"
+                        android:text="14.00 - 15.00"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:background="#83eb34"
+                        android:visibility="gone"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/fifteen_sixteen_btn1"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textAlignment="center"
+                        android:text="15.00 - 16.00"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:background="#83eb34"
+                        android:visibility="gone"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/sixteen_seventeen_btn1"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textAlignment="center"
+                        android:text="16.00 - 17.00"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:background="#83eb34"
+                        android:visibility="gone"
+                        />
+
+                    <Button
+                        android:id="@+id/request_btn"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:onClick="requestTestDriveFromDealer"
+                        android:textStyle="bold"
+                        android:textColor="#4778c4"
+                        android:background="@null"
+                        android:textAllCaps="false"
+                        android:visibility="gone"
+                        android:text="Test Sürüşü Formunu Gönder!"/>
+
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

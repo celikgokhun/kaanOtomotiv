@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kaan.otomotiv.myapplication">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".Activities.WarningEditActivity"/>
+        <activity android:name=".Activities.CampEditActivity" />
+        <activity android:name=".Activities.NewsEditActivity" />
+        <activity android:name=".Activities.PanelAdminActivity" />
+        <activity android:name=".Activities.AdminLoginActivity" />
+        <activity android:name=".Activities.BasketActivity" />
+        <activity android:name=".Activities.MainActivity" />
+        <activity android:name=".Activities.VerificationCodeActivity" />
+        <activity android:name=".Activities.AccessoriesActivity" />
+        <activity android:name=".Activities.InsuranceRequestActivity" />
+        <activity android:name=".Activities.LinkWithDealerActivity" />
+        <activity android:name=".Activities.RequestTestDriveActivity" />
+        <activity android:name=".Activities.WarningsActivity" />
+        <activity android:name=".Activities.UserSignUpActivity" />
+        <activity android:name=".Activities.SetAppointmentActivity" />
+        <activity android:name=".Activities.MyDealerActivity" />
+        <activity android:name=".Activities.MyToyotaActivity" />
+
+
+        <activity android:name=".Activities.LegalActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".Services.LocationService" />
+    </application>
+
+</manifest>
